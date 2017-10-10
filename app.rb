@@ -14,12 +14,8 @@ get '/LUCY' do
 end
 
 get '/cat' do
-  "<div style='border: 6px solid red'>
-  <h1> Captain Code </h1>
-  </div>
-  <div style='border: 6px dashed blue'>
-  <img src='http://bit.ly/1eze8aE'>
-  </div>"
+  @name = ["CAT", "cat"].sample
+  erb(:index)
 end
 
 # get '/' do
